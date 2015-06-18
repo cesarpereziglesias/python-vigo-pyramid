@@ -363,8 +363,25 @@ class MyModel(Base):
                         </code></pre>
                     </section>
 
+                    <section>
+                        <h2>Transactions</h2>
+                        <p>Any action that modifies database, has to be controlled by a transaction</p>
+                        <pre><code class="python">
+with transaction.manager:
+    user = User(**self._request.POST)
+    DBSession.add(user)
+                        </code></pre>
+                    </section>
+
 				</section>
 
+				<section>
+                    <h2>Structure</h2>
+                    <h4>How do I become tidy with Pyramid?</h4>
+
+                    <p>Pyramid allows you to keep your own structure, so, try to be tidy by yourself<p>
+
+                </section>
 				<section>
                     <h2>Custom scaffolding</h2>
 
