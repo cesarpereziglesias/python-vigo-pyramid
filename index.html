@@ -342,6 +342,51 @@ Content-Length: 94
                 </section>
 
 				<section>
+                    <section>
+                        <h2>Models</h2>
+                        <p>Model management by <a target="_blank" href="">SQLAlchemy</a></p>
+
+                        <pre><code>
+$ pcreate -s alchemy modelsproject
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>How does a model look?</h2>
+                        <pre><code class="python">
+class MyModel(Base):
+    __tablename__ = 'models'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(Text)
+    value = Column(Integer)
+                        </code></pre>
+                    </section>
+
+				</section>
+
+				<section>
+                    <h2>Custom scaffolding</h2>
+
+                    <p><a target="_blank" href="http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/scaffolding.html">Creating Pyramid Scaffolds</a></p>
+                    <p>EX.: <a target="_blank" href="https://github.com/ouvigna/restjson_scaffold" style="font-family: monospace">restjson_scaffold</a></p>
+				</section>
+
+				<section>
+                    <h2>Extras</h2>
+                    <ul>
+                        <li><a href="http://docs.pylonsproject.org/projects/pyramid/en/latest/narr/traversal.html" target="_blank">Traversal</a>: Map URL to code</li>
+                        <li><a href="https://alembic.readthedocs.org/en/latest/" target="_blank">Alembic</a>: A database migration tool</li>
+                        <li><a href="https://gevent-socketio.readthedocs.org/en/latest/">Gevent-socketio</a>: Websocket abstraction</li>
+                    </ul>
+
+				</section>
+
+				<section>
+                    <h3>Pyramid has to have something bad</h3>
+				</section>
+
+				<section>
                     <h3>The most complete guide: Stackoverflow</h3>
                     <h4>Questions tagged</h4>
                     <table>
@@ -365,15 +410,17 @@ Content-Length: 94
 
 				<section>
                     <h2>Links</h2>
-                    <li><a href="https://www.airpair.com/python/posts/django-flask-pyramid">Django vs Flask vs Pyramid: Choosing a Python Web Framework</a></li>
+                    <ul>
+                        <li><a href="http://docs.pylonsproject.org/projects/pyramid/en/latest/index.html" target="_blank">The Pyramid Web Framework</a></li>
+                        <li><a href="https://www.airpair.com/python/posts/django-flask-pyramid">Django vs Flask vs Pyramid: Choosing a Python Web Framework</a></li>
+                    </ul>
 
                 </section>
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						- <a target="_blank" href="https://github.com/ouvigna/python-vigo-pyramid">https://github.com/ouvigna/python-vigo-pyramid</a> <br>
 					</p>
 				</section>
 
