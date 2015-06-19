@@ -300,7 +300,7 @@ def my_view(request):
                         <pre><code>
 @view_config(route_name='json', renderer='json')
 def view_json(request):
-    return {'project': 'projectname'}
+    return {'project': 'testrenderers'}
                         </code></pre>
                         <pre><code class="http">
 GET /json HTTP/1.1
@@ -319,7 +319,7 @@ Content-Length: 28
 # views.py
 @view_config(route_name='chameleon', renderer='templates/chameleon.pt')
 def view_chameleon(request):
-    return {'project': 'projectname'}
+    return {'project': 'testrenderers'}
                         </code></pre>
 
                         <pre><code style="font-size: 18px;">
